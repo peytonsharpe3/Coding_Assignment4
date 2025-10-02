@@ -3,8 +3,6 @@ import os
 from datetime import datetime
 import pandas as pd
 import streamlit as st
-from dotenv import load_dotenv
-load_dotenv()
 
 # Optional: fall back to st.secrets if env not set
 SUPABASE_URL = os.getenv("SUPABASE_URL") or st.secrets.get("SUPABASE_URL")
